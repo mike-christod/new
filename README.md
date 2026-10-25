@@ -1,5 +1,17 @@
 # Research Agent
 
+## Easiest: the `/research` command in Claude Code
+
+In a Claude Code session opened on this repo, type:
+
+```
+/research chiller plant optimisation strategies and typical savings
+```
+
+Claude plans the research, searches and reads sources, and saves a cited report to `reports/`. You don't need an API key or any setup. To change the method or report layout, edit `.claude/skills/research/SKILL.md`.
+
+## Standalone script
+
 A command-line agent that researches a topic on the web and writes a cited Markdown report.
 
 Claude breaks the topic into key questions, runs web searches, reads the most useful pages, and writes a structured report: executive summary, background, key findings, open questions, and recommendations. Claims are marked with numbered citations, and the sources are listed at the end.
